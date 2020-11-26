@@ -1,17 +1,19 @@
-@font-face {
-    font-family: 'SourceSansPro';
-    font-weight: 400;
-    src: url('../fonts/SourceSansPro-Regular.ttf');
+/* General */
+a:hover {
+    color: var(--tint);
+    text-decoration: underline;
 }
-@font-face {
-    font-family: 'SourceSansPro';
-    font-weight: 500;
-    src: url('../fonts/SourceSansPro-SemiBold.ttf');
+
+.highlightable {
+    transition: all 0.15s;
 }
-@font-face {
-    font-family: 'SourceSansPro';
-    font-weight: 700;
-    src: url('../fonts/SourceSansPro-Bold.ttf');
+
+.highlightable:hover {
+    background: var(--highlighted);
+}
+
+.primary-tinted {
+    filter: brightness(0.07);
 }
 
 :root {
@@ -25,6 +27,7 @@
     --secondary-background: #F3F3F3;
 
     --tint: #087AD2;
+    --highlighted: #B5D9F5;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -37,9 +40,14 @@
         --secondary-background: #323232;
 
         --tint: #30A5FF;
+        --highlighted: #185280;
+    }
+    .primary-tinted {
+        filter: brightness(1.0);
     }
 }
 
+/* Main */
 html {
     background-color: var(--primary-background);
 }
@@ -66,6 +74,8 @@ html, body {
     margin: 0 0 0 0;
     padding-top: 32pt;
     min-height: calc(100% - 65pt);
+
+    font-family: SourceSansPro, Helvetica, Arial, sans-serif;
 }
 
 /* Caption */
@@ -73,7 +83,6 @@ html, body {
     margin-bottom: 8pt;
     color: var(--primary-text);
 
-    font-family: SourceSansPro, Helvetica, Arial, sans-serif;
     font-size: 28pt;
     font-weight: 700;
 }
@@ -95,7 +104,6 @@ html, body {
     flex-direction: column;
     max-width: 400pt;
 
-    font-family: SourceSansPro, Helvetica, Arial, sans-serif;
     line-height: 1.2;
     color: var(--primary-text);
 }
@@ -136,6 +144,12 @@ html, body {
     justify-content: center;
 }
 
+@media only screen and (max-width: 370px) {
+    .links {
+        flex-direction: column;
+    }
+}
+
 .links li {
     margin: 8pt;
     padding: 12pt;
@@ -145,7 +159,6 @@ html, body {
     color: var(--primary-text);
     background: var(--secondary-background);
 
-    font-family: SourceSansPro, Helvetica, Arial, sans-serif;
     font-size: 18pt;
     font-weight: 700;
 }
@@ -162,7 +175,7 @@ html, body {
 
 .links a:hover {
     color: var(--primary-text);
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 /* Footer */
@@ -181,11 +194,21 @@ footer p {
 
 footer a {
     color: var(--tertiary-text);
-    text-decoration: underline;
 }
 
-/* General */
-a:hover {
-    color: var(--tint);
-    text-decoration: underline;
+/* Fonts */
+@font-face {
+    font-family: 'SourceSansPro';
+    font-weight: 400;
+    src: url('../fonts/SourceSansPro-Regular.ttf');
+}
+@font-face {
+    font-family: 'SourceSansPro';
+    font-weight: 500;
+    src: url('../fonts/SourceSansPro-SemiBold.ttf');
+}
+@font-face {
+    font-family: 'SourceSansPro';
+    font-weight: 700;
+    src: url('../fonts/SourceSansPro-Bold.ttf');
 }
