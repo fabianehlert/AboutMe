@@ -195,7 +195,7 @@ a:hover {
 }
 
 .highlightable {
-    transition: all 0.15s;
+    transition: all 0.3s;
 }
 
 .highlightable:hover {
