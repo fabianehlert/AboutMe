@@ -1,17 +1,4 @@
-/* General */
-a:hover {
-    color: var(--tint);
-    text-decoration: underline;
-}
-
-.highlightable {
-    transition: all 0.15s;
-}
-
-.highlightable:hover {
-    background: var(--highlighted);
-}
-
+/* Root */
 .primary-tinted {
     filter: brightness(0.07);
 }
@@ -47,7 +34,7 @@ a:hover {
     }
 }
 
-/* Main */
+/* Body */
 html {
     background-color: var(--primary-background);
 }
@@ -194,6 +181,25 @@ footer p {
 
 footer a {
     color: var(--tertiary-text);
+}
+
+/* General */
+a {
+    transition: all 0.15s;
+}
+
+a:hover {
+    transition: all 0.15s;
+    color: var(--tint);
+    text-decoration: underline;
+}
+
+.highlightable {
+    transition: all 0.15s;
+}
+
+.highlightable:hover {
+    background: var(--highlighted);
 }
 
 /* Fonts */
