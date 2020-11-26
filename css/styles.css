@@ -63,9 +63,19 @@ html, body {
     align-items: center;
     justify-content: center;
 
-    padding-top: 32pt;
     margin: 0 0 0 0;
+    padding-top: 32pt;
     min-height: calc(100% - 65pt);
+}
+
+/* Caption */
+.caption h1 {
+    margin-bottom: 8pt;
+    color: var(--primary-text);
+
+    font-family: SourceSansPro, Helvetica, Arial, sans-serif;
+    font-size: 28pt;
+    font-weight: 700;
 }
 
 /* Content */
@@ -113,10 +123,52 @@ html, body {
     text-decoration: underline;
 }
 
+/* Links */
+.links {
+    padding: 0;
+    margin: 0 0 0 0;
+    list-style-type: none;
+
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.links li {
+    margin: 8pt;
+    padding: 12pt;
+    width: 24pt;
+    height: 24pt;
+    border-radius: 12pt;
+    color: var(--primary-text);
+    background: var(--secondary-background);
+
+    font-family: SourceSansPro, Helvetica, Arial, sans-serif;
+    font-size: 18pt;
+    font-weight: 700;
+}
+
+.links img {
+    width: 24pt;
+    height: 24pt;
+}
+
+.links a {
+    color: var(--primary-text);
+    text-decoration: none;
+}
+
+.links a:hover {
+    color: var(--primary-text);
+    text-decoration: underline;
+}
+
 /* Footer */
 footer {
     font-family: SourceSansPro, Helvetica, Arial, sans-serif;
-    margin: 16pt 0pt 16pt 0pt;
+    margin: 32pt 0pt 16pt 0pt;
 }
 
 footer p {
