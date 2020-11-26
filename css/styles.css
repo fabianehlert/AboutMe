@@ -67,11 +67,12 @@ html, body {
 
 /* Caption */
 .caption h1 {
-    margin-bottom: 8pt;
+    margin: 16pt 16pt 8pt 16pt;
     color: var(--primary-text);
 
     font-size: 28pt;
     font-weight: 700;
+    text-align: center
 }
 
 /* Content */
