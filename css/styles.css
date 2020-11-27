@@ -78,7 +78,7 @@ html, body {
 /* Content */
 .profile-picture {
     border-radius: 50%;
-    padding: 32pt;
+    margin: 32pt;
     z-index: 3;
 }
 
@@ -130,12 +130,6 @@ html, body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-}
-
-@media only screen and (max-width: 370px) {
-    .links {
-        flex-direction: column;
-    }
 }
 
 .links li {
@@ -201,6 +195,15 @@ a:hover {
 
 .highlightable:hover {
     background: var(--highlighted);
+}
+
+@media only screen and (max-width: 370px) {
+    .profile-picture {
+        margin: 8pt;
+    }
+    .links {
+        flex-direction: column;
+    }
 }
 
 /* Fonts */
