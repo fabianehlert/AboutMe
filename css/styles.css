@@ -177,7 +177,7 @@ footer {
 
 @supports(margin-bottom: max(0pt)) {
     footer {
-        margin-bottom: max(16pt, calc(env(safe-area-inset-bottom) + 32pt));
+        margin-bottom: max(16pt, env(safe-area-inset-bottom));
     }
 }
 
