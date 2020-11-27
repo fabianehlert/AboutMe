@@ -59,8 +59,7 @@ html, body {
     justify-content: center;
 
     margin: 0 0 0 0;
-    padding-top: 32pt;
-    min-height: calc(100% - 65pt);
+    padding-top: 16pt;
 
     font-family: SourceSansPro, Helvetica, Arial, sans-serif;
 }
@@ -79,7 +78,6 @@ html, body {
 .profile-picture {
     border-radius: 50%;
     margin: 32pt;
-    z-index: 3;
 }
 
 .content {
