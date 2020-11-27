@@ -185,17 +185,17 @@ footer a {
 
 /* General */
 a {
-    transition: all 0.15s;
+    transition: color 0.15s;
 }
 
 a:hover {
-    transition: all 0.15s;
+    transition: color 0.15s;
     color: var(--tint);
     text-decoration: underline;
 }
 
 .highlightable {
-    transition: all 0.3s;
+    transition: background 0.3s;
 }
 
 .highlightable:hover {
