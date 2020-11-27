@@ -161,7 +161,14 @@ html, body {
 /* Footer */
 footer {
     font-family: SourceSansPro, Helvetica, Arial, sans-serif;
-    margin: 32pt 0pt 16pt 0pt;
+    margin-top: 32pt;
+    margin-bottom: 16pt;
+}
+
+@supports(margin-bottom: max(0pt)) {
+    footer {
+        margin-bottom: max(16pt, env(safe-area-inset-bottom));
+    }
 }
 
 footer p {
