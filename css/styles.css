@@ -193,6 +193,36 @@ footer a {
     color: var(--tertiary-text);
 }
 
+/* Buttons */
+.rounded-button {
+    transition: background 0.3s;
+
+    margin: 16pt;
+    margin-bottom: 32pt;
+
+    padding: 12pt;
+    border-radius: 16pt;
+
+    font-size: 16pt;
+    font-weight: 500;
+    text-decoration: none;
+
+    color: var(--primary-text);
+    background: var(--secondary-background);
+
+    border: none;
+    cursor: pointer;
+}
+
+.rounded-button:hover {
+    transition: background 0.3s;
+
+    text-decoration: none;
+
+    color: var(--primary-text);
+    background: var(--highlighted);
+}
+
 /* General */
 a {
     transition: color 0.15s;
