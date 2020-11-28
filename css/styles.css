@@ -158,19 +158,21 @@ html, body {
 
     font-size: 18pt;
     font-weight: 700;
+    text-align: center;
 }
 
 .links img {
-    width: 24pt;
-    height: 24pt;
+    width: 100%;
+    height: auto;
 }
 
-.links a {
+.links li a {
+    display: block;
     color: var(--primary-text);
     text-decoration: none;
 }
 
-.links a:hover {
+.links li a:hover {
     color: var(--primary-text);
     text-decoration: none;
 }
