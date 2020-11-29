@@ -149,11 +149,10 @@ html, body {
 
 .links li {
     margin: 8pt;
-    padding: 12pt;
-    width: 24pt;
-    height: 24pt;
+    width: 48pt;
+    height: 48pt;
     border-radius: 12pt;
-    color: var(--primary-text);
+
     background: var(--secondary-background);
 
     font-size: 18pt;
@@ -168,13 +167,14 @@ html, body {
 
 .links li a {
     display: block;
-    color: var(--primary-text);
     text-decoration: none;
+    color: var(--primary-text);
+    padding: 12pt;
 }
 
 .links li a:hover {
-    color: var(--primary-text);
     text-decoration: none;
+    color: var(--primary-text);
 }
 
 /* Footer */
