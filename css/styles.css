@@ -1,8 +1,4 @@
 /* Root */
-.primary-tinted {
-    filter: brightness(0.07);
-}
-
 :root {
     color-scheme: light dark;
 
@@ -28,9 +24,6 @@
 
         --tint: #30A5FF;
         --highlighted: #185280;
-    }
-    .primary-tinted {
-        filter: brightness(1.0);
     }
 }
 
