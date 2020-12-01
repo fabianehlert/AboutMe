@@ -1,4 +1,4 @@
-# robots.txt for http://fabianehlert.com/
+# robots.txt for https://fabianehlert.com/
 
 User-Agent: *
 Disallow: /imprint.html
