@@ -1,0 +1,5 @@
+# robots.txt for http://fabianehlert.com/
+
+User-Agent: *
+Disallow: /imprint.html
+Disallow: /dataprivacy.html
