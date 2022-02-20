@@ -54,7 +54,7 @@ html, body {
     margin: 0 0 0 0;
     padding-top: 16pt;
 
-    font-family: SourceSansPro, Helvetica, Arial, sans-serif;
+    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
 }
 
 /* Caption */
@@ -106,14 +106,14 @@ html, body {
 .content h2 {
     margin: 0;
     font-size: 16pt;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .content h3 {
     margin: 0;
     margin-top: 24pt;
     font-size: 16pt;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .content p {
@@ -177,7 +177,7 @@ html, body {
 
 /* Footer */
 footer {
-    font-family: SourceSansPro, Helvetica, Arial, sans-serif;
+    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
     margin-top: 16pt;
     margin-bottom: 16pt;
 }
@@ -191,7 +191,7 @@ footer {
 footer p {
     color: var(--tertiary-text);
     font-size: 13pt;
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
     margin: 0 0 0 0;
 }
@@ -211,7 +211,7 @@ footer a {
     border-radius: 12pt;
 
     font-size: 16pt;
-    font-weight: 500;
+    font-weight: 600;
     text-decoration: none;
 
     color: var(--primary-text);
@@ -256,21 +256,4 @@ a:hover {
     .links {
         flex-direction: column;
     }
-}
-
-/* Fonts */
-@font-face {
-    font-family: 'SourceSansPro';
-    font-weight: 400;
-    src: url('../fonts/SourceSansPro-Regular.woff2') format("woff2"), url('../fonts/SourceSansPro-Regular.ttf') format("truetype");
-}
-@font-face {
-    font-family: 'SourceSansPro';
-    font-weight: 500;
-    src: url('../fonts/SourceSansPro-SemiBold.woff2') format("woff2"), url('../fonts/SourceSansPro-SemiBold.ttf') format("truetype");
-}
-@font-face {
-    font-family: 'SourceSansPro';
-    font-weight: 700;
-    src: url('../fonts/SourceSansPro-Bold.woff2') format("woff2"), url('../fonts/SourceSansPro-Bold.ttf') format("truetype");
 }
