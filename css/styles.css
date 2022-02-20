@@ -262,15 +262,15 @@ a:hover {
 @font-face {
     font-family: 'SourceSansPro';
     font-weight: 400;
-    src: url('../fonts/SourceSansPro-Regular.ttf');
+    src: url('../fonts/SourceSansPro-Regular.woff2') format("woff2"), url('../fonts/SourceSansPro-Regular.ttf') format("truetype");
 }
 @font-face {
     font-family: 'SourceSansPro';
     font-weight: 500;
-    src: url('../fonts/SourceSansPro-SemiBold.ttf');
+    src: url('../fonts/SourceSansPro-SemiBold.woff2') format("woff2"), url('../fonts/SourceSansPro-SemiBold.ttf') format("truetype");
 }
 @font-face {
     font-family: 'SourceSansPro';
     font-weight: 700;
-    src: url('../fonts/SourceSansPro-Bold.ttf');
+    src: url('../fonts/SourceSansPro-Bold.woff2') format("woff2"), url('../fonts/SourceSansPro-Bold.ttf') format("truetype");
 }
