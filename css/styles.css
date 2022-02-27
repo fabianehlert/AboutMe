@@ -16,7 +16,7 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --primary-text: white;
-        --secondary-text: #CFCFCF;
+        --secondary-text: #9E9E9E;
         --tertiary-text: #757575;
 
         --primary-background: #1D1D1D;
@@ -32,15 +32,37 @@ html {
     background-color: var(--primary-background);
 }
 
-body {
-    margin: 0 0 0 0;
-}
-
 html, body {
-    max-width: 100%;
+    max-width: 500pt;
     min-height: 100%;
     overflow-x: hidden;
     overflow-y: scroll;
+    margin: 0 auto;
+}
+
+/* Font styles */
+h1 {
+    margin: 0;
+    font-size: 26pt;
+    font-weight: 700;
+}
+
+h2 {
+    margin: 0;
+    font-size: 16pt;
+    font-weight: 600;
+}
+
+h3 {
+    margin: 0;
+    font-size: 12pt;
+    font-weight: 400;
+    color: var(--secondary-text);
+}
+
+p {
+    font-size: 14pt;
+    font-weight: 400;
 }
 
 /* Container */
@@ -68,7 +90,6 @@ html, body {
 
     font-size: 24pt;
     font-weight: 700;
-    text-align: center
 }
 
 /* Content */
@@ -90,36 +111,11 @@ html, body {
     margin: 16pt;
 
     background: var(--secondary-background);
-    display: flex;
-    flex-direction: column;
-    max-width: 400pt;
-
     color: var(--primary-text);
-}
-
-.content h1 {
-    margin: 0;
-    font-size: 26pt;
-    font-weight: 700;
-}
-
-.content h2 {
-    margin: 0;
-    font-size: 16pt;
-    font-weight: 600;
-}
-
-.content h3 {
-    margin: 0;
-    margin-top: 24pt;
-    font-size: 16pt;
-    font-weight: 600;
 }
 
 .content p {
     margin-bottom: 0;
-    font-size: 14pt;
-    font-weight: 400;
 }
 
 .legal p {
@@ -129,6 +125,23 @@ html, body {
 .content a {
     color: var(--primary-text);
     text-decoration: underline;
+}
+
+/* Projects */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16pt;
+    margin: 16pt
+}
+
+.projects p {
+    margin: 0;
+    margin-top: 4pt;
+}
+
+.projects .content {
+    margin: 0;
 }
 
 /* Links */
@@ -255,5 +268,11 @@ a:hover {
     }
     .links {
         flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .projects {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
