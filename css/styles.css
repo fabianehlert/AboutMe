@@ -54,7 +54,7 @@ html, body {
     margin: 0 0 0 0;
     padding-top: 16pt;
 
-    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+    font-family: 'SourceSansPro', Helvetica, Arial, sans-serif;
 }
 
 /* Caption */
@@ -177,7 +177,7 @@ html, body {
 
 /* Footer */
 footer {
-    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+    font-family: 'SourceSansPro', Helvetica, Arial, sans-serif;
     margin-top: 16pt;
     margin-bottom: 16pt;
 }
@@ -256,4 +256,21 @@ a:hover {
     .links {
         flex-direction: column;
     }
+}
+
+/* Fonts */
+@font-face {
+    font-family: 'SourceSansPro';
+    font-weight: 400;
+    src: url('../fonts/SourceSansPro-Regular.woff2') format("woff2"), url('../fonts/SourceSansPro-Regular.ttf') format("truetype");
+}
+@font-face {
+    font-family: 'SourceSansPro';
+    font-weight: 600;
+    src: url('../fonts/SourceSansPro-SemiBold.woff2') format("woff2"), url('../fonts/SourceSansPro-SemiBold.ttf') format("truetype");
+}
+@font-face {
+    font-family: 'SourceSansPro';
+    font-weight: 700;
+    src: url('../fonts/SourceSansPro-Bold.woff2') format("woff2"), url('../fonts/SourceSansPro-Bold.ttf') format("truetype");
 }
