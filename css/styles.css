@@ -7,7 +7,7 @@
     --tertiary-text: #959595;
 
     --primary-background: white;
-    --secondary-background: #F3F3F3;
+    --secondary-background: #EDEDED;
 
     --tint: #087AD2;
     --highlighted: #B5D9F5;
@@ -20,7 +20,7 @@
         --tertiary-text: #757575;
 
         --primary-background: #1D1D1D;
-        --secondary-background: #323232;
+        --secondary-background: #3B3B3B;
 
         --tint: #30A5FF;
         --highlighted: #185280;
@@ -52,23 +52,10 @@ html, body {
     justify-content: center;
 
     margin: 0 0 0 0;
-    padding-top: 16pt;
-
-    font-family: 'SourceSansPro', Helvetica, Arial, sans-serif;
-}
-
-/* Caption */
-.caption {
-    margin-top: 16pt;
-    margin-bottom: 0pt;
-    margin-left: 16pt;
-    margin-right: 16pt;
 
     color: var(--primary-text);
 
-    font-size: 24pt;
-    font-weight: 700;
-    text-align: center
+    font-family: 'SourceSansPro', Helvetica, Arial, sans-serif;
 }
 
 /* Content */
@@ -85,38 +72,35 @@ html, body {
 }
 
 .content {
-    border-radius: 16pt;
     padding: 16pt;
-    margin: 16pt;
 
-    background: var(--secondary-background);
     display: flex;
     flex-direction: column;
-    max-width: 400pt;
-
-    color: var(--primary-text);
+    max-width: 500pt;
 }
 
-.content h1 {
+h1 {
     margin: 0;
-    font-size: 26pt;
+    font-size: 28pt;
     font-weight: 700;
 }
 
-.content h2 {
-    margin: 0;
-    font-size: 16pt;
-    font-weight: 600;
-}
-
-.content h3 {
+h2 {
     margin: 0;
     margin-top: 24pt;
-    font-size: 16pt;
-    font-weight: 600;
+    font-size: 20pt;
+    font-weight: 700;
 }
 
-.content p {
+h3 {
+    margin: 0;
+    font-size: 18pt;
+    font-weight: 400;
+
+    color: var(--secondary-text);
+}
+
+p {
     margin-bottom: 0;
     font-size: 14pt;
     font-weight: 400;
@@ -129,6 +113,19 @@ html, body {
 .content a {
     color: var(--primary-text);
     text-decoration: underline;
+}
+
+/* Contact and CV */
+.contact-cv {
+    padding: 0pt;
+    margin: 16pt 16pt 32pt 16pt;
+
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 32pt;
 }
 
 /* Links */
@@ -147,15 +144,11 @@ html, body {
 
 .links li {
     margin: 8pt;
-    width: 48pt;
-    height: 48pt;
+    width: 40pt;
+    height: 40pt;
     border-radius: 12pt;
 
     background: var(--secondary-background);
-
-    font-size: 18pt;
-    font-weight: 700;
-    text-align: center;
 }
 
 .links img {
@@ -167,7 +160,7 @@ html, body {
     display: block;
     text-decoration: none;
     color: var(--primary-text);
-    padding: 12pt;
+    padding: 8pt;
 }
 
 .links li a:hover {
@@ -201,17 +194,17 @@ footer a {
 }
 
 /* Buttons */
-.rounded-button {
+.button {
     transition: background 0.3s;
 
     margin: 16pt;
-    margin-bottom: 16pt;
 
-    padding: 12pt;
-    border-radius: 12pt;
+    padding: 10pt 20pt 10pt 20pt;
+    border-radius: 50vh;
 
     font-size: 16pt;
     font-weight: 600;
+    text-align: center;
     text-decoration: none;
 
     color: var(--primary-text);
@@ -221,13 +214,28 @@ footer a {
     cursor: pointer;
 }
 
-.rounded-button:hover {
+.button:hover {
     transition: background 0.3s;
 
     text-decoration: none;
 
     color: var(--primary-text);
     background: var(--highlighted);
+}
+
+.button-secondary {
+    color: var(--primary-background);
+    background: var(--primary-text);
+}
+
+.button-secondary:hover {
+    color: var(--primary-background);
+    background: var(--tint);
+}
+
+.button-fixed {
+    width: 100pt;
+    margin: 0pt;
 }
 
 /* General */
@@ -255,6 +263,13 @@ a:hover {
     }
     .links {
         flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .contact-cv {
+        flex-direction: column;
+        gap: 16pt;
     }
 }
 
