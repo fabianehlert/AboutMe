@@ -1,6 +1,7 @@
 # robots.txt for https://fabianehlert.com/
 
-User-Agent: *
+User-agent: *
+Disallow: *imprint*
 Disallow: /imprint
 Disallow: /imprint.html
 Disallow: /dataprivacy
