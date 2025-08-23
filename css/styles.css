@@ -95,7 +95,7 @@ h2 {
 h3 {
     margin: 0;
     font-size: 18pt;
-    font-weight: 400;
+    font-weight: 600;
 
     color: var(--secondary-text);
 }
@@ -113,6 +113,10 @@ p {
 .content a {
     color: var(--primary-text);
     text-decoration: underline;
+}
+
+.content p {
+    line-height: 1.5;
 }
 
 /* Contact and CV */
