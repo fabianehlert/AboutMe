@@ -62,7 +62,7 @@ html, body {
 .profile-picture {
     margin: min(10%, 32pt);
 
-    width: 250px;
+    width: 320px;
     height: auto;
 
     max-width: 50%;
